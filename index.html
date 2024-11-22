@@ -3,44 +3,52 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Yunting Xie">
+    <meta name="description" content="Portfolio of Yunting Xie, a Full Stack Developer specializing in building scalable and user-friendly web applications.">
+    <meta name="keywords" content="Full Stack Developer, Portfolio, Yunting Xie, Web Developer, Java, React, Spring, Node.js">
     <title>Portfolio - Yunting Xie</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"></script>
 </head>
-<body>
-    <nav class="navbar">
-        <a href="index.html" class="logo">YX</a>
-        <div class="nav-links">
-            <a href="index.html">Home</a>
-            <a href="skills.html">Skills</a>
-            <a href="project.html">Projects</a>
-            <a href="contact.html">Contact</a>
-        </div>
-        <div class="menu-btn">
-            <span></span>
-            <span></span>
-            <span></span>
-        </div>
-    </nav>
 
+<header>
+    <nav class="navbar">
+        <a href="index.html" class="logo" aria-label="Home">YX</a>
+        <div class="nav-links">
+            <a href="index.html" aria-label="Home">Home</a>
+            <a href="skills.html" aria-label="Projects">Skills</a>
+            <a href="projects.html" aria-label="Projects">Projects</a>
+        </div>
+        <button class="menu-btn" aria-label="Menu button">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </nav>    
+</header>
+
+<body>
     <section class="hero" id="home">
         <div class="hero-content">
             <p class="greeting">Welcome To My Portfolio!</p>
             <h1 class="name">I'm Yunting Xie</h1>
             <p class="title">Full Stack Developer</p>
-            <p class="description"></p>
+            <p class="description">Passionate about building scalable, user-friendly web applications and bringing ideas to life through code. Let's create something amazing together!</p>
             <div class="social-links">
-                <a href="https://github.com/TammyXie4677"><i class="fab fa-github"></i></a>
-                <a href="https://www.linkedin.com/in/yunting-xie/"><i class="fab fa-linkedin"></i></a>
-                <a href="#"><i class="fas fa-envelope"></i></a>
+                <a href="https://github.com/TammyXie4677" aria-label="GitHub Profile"><i class="fab fa-github" alt="GitHub Icon"></i></a>
+                <a href="https://www.linkedin.com/in/yunting-xie/" aria-label="LinkedIn Profile"><i class="fab fa-linkedin" alt="LinkedIn Icon"></i></a>
             </div>
-            <a href="contact.html" class="cta-button">Let's Connect</a>
+            <a href="mailto:tintin_xie@outlook.com" class="cta-button" aria-label="Contact me">Connect with me</a>
         </div>
         <div class="hero-image">
-            <img src="web_background.avif" alt="Developer illustration">
+            <img src="imgs/background.jpg" alt="Developer illustration" loading="lazy">
         </div>
     </section>
-
-    <script src="script.js"></script>
 </body>
+
+<footer class="footer">
+    <p>&copy; 2024 Yunting Xie. All rights reserved.</p>
+</footer>
+<script src="script.js"></script>
 </html>
