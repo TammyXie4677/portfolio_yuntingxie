@@ -41,7 +41,6 @@ document.addEventListener('DOMContentLoaded', function() {
 document.addEventListener('DOMContentLoaded', function() {
     const contactButton = document.querySelector('.cta-button');
     
-    // Replace 'your.email@example.com' with your actual email address
     const email = 'tintin_xie@outlook.com';
     const subject = 'Job Opportunity Inquiry';
     const body = 'Hi Yunting,\n\nI came across your portfolio and would like to discuss a potential opportunity...';
@@ -51,15 +50,4 @@ document.addEventListener('DOMContentLoaded', function() {
         const mailtoLink = `mailto:${email}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
         window.location.href = mailtoLink;
     });
-
-    // Mobile menu functionality (keeping your existing menu functionality)
-    const menuBtn = document.querySelector('.menu-btn');
-    const navLinks = document.querySelector('.nav-links');
-
-    if (menuBtn && navLinks) {
-        menuBtn.addEventListener('click', () => {
-            navLinks.classList.toggle('active');
-            menuBtn.classList.toggle('active');
-        });
-    }
 });
